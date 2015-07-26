@@ -10,10 +10,11 @@
 		8E0AF7E31B64FBE800EE599D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF7E21B64FBE800EE599D /* main.m */; };
 		8E0AF7E61B64FBE800EE599D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF7E51B64FBE800EE599D /* AppDelegate.m */; };
 		8E0AF7E91B64FBE800EE599D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF7E81B64FBE800EE599D /* ViewController.m */; };
-		8E0AF7EC1B64FBE800EE599D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AF7EA1B64FBE800EE599D /* Main.storyboard */; };
 		8E0AF7EE1B64FBE800EE599D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AF7ED1B64FBE800EE599D /* Images.xcassets */; };
 		8E0AF7F11B64FBE800EE599D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AF7EF1B64FBE800EE599D /* LaunchScreen.xib */; };
 		8E0AF7FD1B64FBE800EE599D /* AnpUiCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF7FC1B64FBE800EE599D /* AnpUiCollectionViewTests.m */; };
+		8E0AF8091B655E8E00EE599D /* ANPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF8071B655E8E00EE599D /* ANPViewController.m */; };
+		8E0AF80D1B65652800EE599D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AF80C1B65652800EE599D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,14 @@
 		8E0AF7E51B64FBE800EE599D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E0AF7E71B64FBE800EE599D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8E0AF7E81B64FBE800EE599D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8E0AF7EB1B64FBE800EE599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E0AF7ED1B64FBE800EE599D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E0AF7F01B64FBE800EE599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E0AF7F61B64FBE800EE599D /* AnpUiCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnpUiCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0AF7FB1B64FBE800EE599D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0AF7FC1B64FBE800EE599D /* AnpUiCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnpUiCollectionViewTests.m; sourceTree = "<group>"; };
+		8E0AF8061B655E8E00EE599D /* ANPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANPViewController.h; path = "simple collectionView/ANPViewController.h"; sourceTree = "<group>"; };
+		8E0AF8071B655E8E00EE599D /* ANPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANPViewController.m; path = "simple collectionView/ANPViewController.m"; sourceTree = "<group>"; };
+		8E0AF80C1B65652800EE599D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,11 @@
 				8E0AF7E51B64FBE800EE599D /* AppDelegate.m */,
 				8E0AF7E71B64FBE800EE599D /* ViewController.h */,
 				8E0AF7E81B64FBE800EE599D /* ViewController.m */,
-				8E0AF7EA1B64FBE800EE599D /* Main.storyboard */,
 				8E0AF7ED1B64FBE800EE599D /* Images.xcassets */,
 				8E0AF7EF1B64FBE800EE599D /* LaunchScreen.xib */,
 				8E0AF7E01B64FBE800EE599D /* Supporting Files */,
+				8E0AF80B1B655E9400EE599D /* Simple Collection */,
+				8E0AF80C1B65652800EE599D /* Main.storyboard */,
 			);
 			path = AnpUiCollectionView;
 			sourceTree = "<group>";
@@ -117,6 +121,15 @@
 				8E0AF7FB1B64FBE800EE599D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E0AF80B1B655E9400EE599D /* Simple Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8E0AF8061B655E8E00EE599D /* ANPViewController.h */,
+				8E0AF8071B655E8E00EE599D /* ANPViewController.m */,
+			);
+			name = "Simple Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0AF7EC1B64FBE800EE599D /* Main.storyboard in Resources */,
 				8E0AF7F11B64FBE800EE599D /* LaunchScreen.xib in Resources */,
 				8E0AF7EE1B64FBE800EE599D /* Images.xcassets in Resources */,
+				8E0AF80D1B65652800EE599D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0AF8091B655E8E00EE599D /* ANPViewController.m in Sources */,
 				8E0AF7E91B64FBE800EE599D /* ViewController.m in Sources */,
 				8E0AF7E61B64FBE800EE599D /* AppDelegate.m in Sources */,
 				8E0AF7E31B64FBE800EE599D /* main.m in Sources */,
@@ -244,14 +258,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E0AF7EA1B64FBE800EE599D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E0AF7EB1B64FBE800EE599D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E0AF7EF1B64FBE800EE599D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,6 +424,7 @@
 				8E0AF8021B64FBE800EE599D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E0AF8031B64FBE800EE599D /* Build configuration list for PBXNativeTarget "AnpUiCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				8E0AF8051B64FBE800EE599D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
